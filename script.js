@@ -19,7 +19,7 @@ function leadingZero(time) {
 
 // Run a standard minute/second/hundredths timer:
 function runTimer() {
-    let currentTimer = `${leadingZero(timer[0])}:${leadingZero(timer[1])}:${leadingZero(timer[2])}`
+    let currentTimer = `${leadingZero(timer[0])}:${leadingZero(timer[1])}:${leadingZero(timer[2])}`;
     let words = testArea.value.split(' ').length;
     wordsCount.innerHTML = `${words} Words`;
     theTimer.innerHTML = currentTimer;
@@ -66,7 +66,7 @@ function reset() {
     timerRunning = false;
 
     testArea.value = "";
-    theTimer.innerHTML = "00:00:00"
+    theTimer.innerHTML = "00:00:00";
     testWrapper.style.borderColor = "grey";
     wordsCount.innerHTML = "0 Words";
 }
