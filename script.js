@@ -53,6 +53,7 @@ function spellCheck() {
 function start() {
     let textLength = testArea.value.length;
     if (textLength === 0 && !timerRunning) {
+        timerRunning = true;
         interval = setInterval(runTimer, 10);
     }
 }
